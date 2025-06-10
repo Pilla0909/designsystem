@@ -104,48 +104,45 @@ a.inline-link {
 .btn-primary-orange:hover {
   background-color: #4F6D7A; /* dark hover fallback */
 }
-/* CARD COMPONENT */
-
-.card-custom {
-  width: 22rem;
+.card-responsive {
+  width: 100%;
+  max-width: 22rem;
+  margin: auto;
   border-radius: 12px;
   overflow: hidden;
-  background-color: var(--color-surface);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.card-custom img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.card-responsive .card-body {
+  background-color: #FAF9F6;
 }
 
-.card-custom .card-title {
-  color: var(--color-primary);
-  font-family: var(--font-serif);
+.card-responsive .card-title {
+  color: #2F4858;
+  font-family: 'Lora', serif;
   font-weight: 700;
-  font-size: 1.25rem;
 }
 
-.card-custom .card-text {
+.card-responsive .card-text {
   color: #456;
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
 }
 
-.card-custom .btn {
-  background-color: var(--color-accent);
-  color: #fff;
+.btn-primary-orange {
+  background-color: #F5B164;
+  color: white;
   font-weight: 600;
-  font-family: var(--font-sans);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
   border-radius: 4px;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s;
 }
 
-.card-custom .btn:hover {
+.btn-primary-orange:hover {
   background-color: #4F6D7A;
 }
+
 /* NAVBAR COMPONENT*/
 
 .navbar-custom {
