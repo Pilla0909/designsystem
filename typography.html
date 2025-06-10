@@ -1,220 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Typography – GreenScape Design System</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway&display=swap" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    .type-sample {
-      border-bottom: 1px solid #ccc;
-      padding: 2rem 0;
-    }
-
-    .type-meta {
-      font-family: monospace;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .type-group {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      gap: 2rem;
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-family: 'EB Garamond', serif;
-      font-weight: 400;
-    }
-
-    .primary-text {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1rem;
-    }
-
-    .secondary-text {
-      font-size: 0.88rem;
-      line-height: 1.45rem;
-      color: #555;
-    }
-
-    .emphasis {
-      color: #d97706;
-    }
-
-    .inline-link {
-      text-decoration: underline;
-      text-underline-offset: 0.3rem;
-    }
-
-    .page-title {
-      font-family: 'EB Garamond', serif;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .section-label {
-      font-size: 0.95rem;
-      color: #999;
-      font-style: italic;
-    }
-  </style>
+  <title>Typography</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <!-- Google Fonts for Garamond & Raleway -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar p-4">
+      <img src="../logo/color logo.png" alt="Logo" class="img-fluid mb-4" style="max-width: 80px;" />
+      <h6 class="fw-bold">Foundations</h6>
+      <ul class="list-unstyled">
+        <li><a href="typography.html" class="fw-bold text-decoration-underline">Typography</a></li>
+        <li><a href="color.html">Color</a></li>
+        <li><a href="logo.html">Logo</a></li>
+      </ul>
+      <h6 class="fw-bold">Components</h6>
+      <ul class="list-unstyled">
+        <li><a href="../components/navbar.html">Navbar</a></li>
+        <li><a href="../components/footer.html">Footer</a></li>
+        <li><a href="../components/card.html">Card</a></li>
+      </ul>
+      <h6 class="fw-bold">Page Patterns</h6>
+      <ul class="list-unstyled">
+        <li><a href="../homepage.html">Homepage</a></li>
+        <li><a href="../project.html">Project</a></li>
+      </ul>
+    </div>
 
-<body class="p-5">
+    <!-- Main Content -->
+    <div class="container py-5">
+      <h2 class="mb-4">Typography</h2>
+      <h4>EB Garamond & Raleway</h4>
+      <p class="text-muted">Minor Third Scale | Base Size: 16px for screen size &lt; 1200px, 18px for screen size ≥ 1200px</p>
+      <hr/>
 
-  <h1 class="page-title">Typography</h1>
-  <p><strong>EB Garamond & Raleway</strong></p>
-  <p class="mb-5 section-label">Minor Third Scale | Base Size: 16px (&lt;1200px), 18px (&ge;1200px)</p>
-
-  <!-- Heading 1 -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <h1>Heading 1</h1>
+      <!-- Heading 1 -->
+      <div class="mb-4">
+        <h1 style="font-family: 'EB Garamond', serif;">Heading 1</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'EB Garamond', serif;
+font-size: 2.488rem;
+font-weight: 400;
+font-style: normal;</code></pre>
       </div>
-      <div class="type-meta">
-        font-family: 'EB Garamond';<br>
-        font-size: 2.488rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
+      <hr/>
+
+      <!-- Heading 2 -->
+      <div class="mb-4">
+        <h2 style="font-family: 'EB Garamond', serif;">Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'EB Garamond', serif;
+font-size: 2.074rem;
+font-weight: 400;
+font-style: normal;</code></pre>
       </div>
+      <hr/>
+
+      <!-- Heading 3 -->
+      <div class="mb-4">
+        <h3 style="font-family: 'EB Garamond', serif;">Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'EB Garamond', serif;
+font-size: 1.728rem;
+font-weight: 400;
+font-style: normal;</code></pre>
+      </div>
+      <hr/>
+
+      <!-- Heading 4 -->
+      <div class="mb-4">
+        <h4 style="font-family: 'EB Garamond', serif;">Heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'EB Garamond', serif;
+font-size: 1.44rem;
+font-weight: 400;
+font-style: normal;</code></pre>
+      </div>
+      <hr/>
+
+      <!-- Heading 5 -->
+      <div class="mb-4">
+        <h5 style="font-family: 'EB Garamond', serif;">Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'EB Garamond', serif;
+font-size: 1.2rem;
+font-weight: 400;
+font-style: normal;</code></pre>
+      </div>
+      <hr/>
+
+      <!-- Primary Body Text -->
+      <div class="mb-4">
+        <h6 class="fw-bold">Primary Body Text</h6>
+        <p style="font-family: 'Raleway', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'Raleway', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+font-style: normal;</code></pre>
+      </div>
+
+      <!-- Secondary Body Text -->
+      <div class="mb-4">
+        <h6 class="fw-bold">Secondary Body Text</h6>
+        <p style="font-family: 'Raleway', sans-serif; font-size:0.88rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Suspendisse scelerisque felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'Raleway', sans-serif;
+font-size: 0.88rem;
+font-weight: 400;
+line-height: 1.45rem;</code></pre>
+      </div>
+
+      <!-- Emphasized Text -->
+      <div class="mb-4">
+        <h6 class="fw-bold">Emphasized Text</h6>
+        <p><span style="font-family: 'Raleway', sans-serif; color: #f2a452;">Suspensidisse scelerisque</span> felis vitae ligula ullamcorper, id consequat lectus pharetra.</p>
+        <pre><code>font-family: 'Raleway', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+font-style: normal;
+color: #f2a452; /* Example accent color */</code></pre>
+      </div>
+
+      <!-- Inline Link -->
+      <div class="mb-4">
+        <h6 class="fw-bold">Inline Link</h6>
+        <p style="font-family: 'Raleway', sans-serif;">Lorem ipsum dolor sit amet, <a href="#" style="text-decoration: underline; color: #294957;">Suspensidisse scelerisque</a> felis vitae ligula ullamcorper.</p>
+        <pre><code>font-family: 'Raleway', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+text-decoration: underline;
+color: #294957;
+text-underline-offset: 0.3rem;</code></pre>
+      </div>
+
     </div>
   </div>
-
-  <!-- Heading 2 -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'EB Garamond';<br>
-        font-size: 2.074rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
-      </div>
-    </div>
-  </div>
-
-  <!-- Heading 3 -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <h3>Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'EB Garamond';<br>
-        font-size: 1.728rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
-      </div>
-    </div>
-  </div>
-
-  <!-- Heading 4 -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <h4>Heading 4</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'EB Garamond';<br>
-        font-size: 1.44rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
-      </div>
-    </div>
-  </div>
-
-  <!-- Heading 5 -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <h5>Heading 5</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'EB Garamond';<br>
-        font-size: 1.2rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
-      </div>
-    </div>
-  </div>
-
-  <!-- Primary Body Text -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <p class="primary-text">Primary Body Text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'Raleway';<br>
-        font-size: 1rem;<br>
-        font-weight: 400;<br>
-        font-style: normal;
-      </div>
-    </div>
-  </div>
-
-  <!-- Secondary Body Text -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <p class="secondary-text">Secondary Body Text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'Raleway';<br>
-        font-size: 0.88rem;<br>
-        line-height: 1.45rem;<br>
-        font-weight: 400;
-      </div>
-    </div>
-  </div>
-
-  <!-- Emphasis -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <p class="emphasis">Emphasized Text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'Raleway';<br>
-        font-size: 1rem;<br>
-        font-weight: 400;<br>
-        color: #d97706;
-      </div>
-    </div>
-  </div>
-
-  <!-- Inline Link -->
-  <div class="type-sample">
-    <div class="type-group">
-      <div>
-        <p class="inline-link">Inline Link<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-      <div class="type-meta">
-        font-family: 'Raleway';<br>
-        font-size: 1rem;<br>
-        text-decoration: underline;<br>
-        text-underline-offset: 0.3rem;
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
