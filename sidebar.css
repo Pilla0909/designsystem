@@ -21,6 +21,20 @@
   margin-bottom: 0.4rem;
   font-size: 1.08rem;
   color: #2F4858;
+  background: transparent! important;
+  border: none! important;
+  box-shadow: none! important;
+  outline: none! important;
+}
+
+.sidebar-section-title: focus,
+.sidebar-section-title: hover,
+.sidebar-section-title.active {
+  color: #186137;
+  background: transparent! important;
+  border: none! important;
+  box-shadow: none! important;
+  outline: none! important;
 }
 
 .sidebar ul {
@@ -43,7 +57,7 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.sidebar-link:hover,
+.sidebar-link: hover,
 .sidebar-link.active {
   background: #edeceb;
   color: #186137;
