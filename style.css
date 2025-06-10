@@ -179,9 +179,11 @@ a.inline-link {
   border-top: 1px solid var(--color-border);
 }
 
-.footer-custom .footer-logo {
+.footer-logo {
   max-width: 80px;
-  margin-bottom: 1rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-custom .footer-links {
