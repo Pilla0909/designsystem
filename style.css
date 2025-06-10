@@ -285,6 +285,179 @@ footer p {
     padding: 1.2rem 0.5rem;
   }
 }
+/* Main content styling */
+.main-content {
+  background: #fff;
+  border-radius: 18px;
+  min-height: 100vh;
+  box-shadow: 0 2px 16px rgba(44, 50, 56, 0.08);
+  margin: 2.5rem 2rem 2.5rem 0;
+  padding: 2.5rem;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    padding: 1rem;
+    margin: 1.2rem 0.5rem 1.2rem 0;
+  }
+}
+
+/* Heading and label */
+.main-content h1 {
+  color: #2f4858;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#screenSizeLabel {
+  font-size: 1.05rem;
+}
+
+/* Bootstrap Tabs Customization */
+.nav-tabs {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+  color: #2f4858;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin-right: 0.1rem;
+  padding: 0.7rem 1.2rem;
+  transition: background 0.16s, color 0.16s;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: #2f4858;
+  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+  border: none;
+}
+
+.nav-tabs .nav-link:hover {
+  background: #e4eaf1;
+  color: #2f4858;
+}
+
+/* Tab Content Images */
+.tab-content img {
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px rgba(44,50,56,0.12);
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive: Stack sidebar and content on small screens */
+@media (max-width: 700px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .main-content {
+    border-radius: 0;
+    margin: 0;
+    min-height: unset;
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* Optional: Give page a light background */
+body {
+  background: #faf9f6;
+}
+/* Container and Grid */
+.container {
+  max-width: 1100px;
+}
+
+/* Logo Cards */
+.card {
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44, 50, 56, 0.08);
+  border: none;
+  transition: box-shadow 0.18s;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 6px 28px rgba(44, 50, 56, 0.14);
+}
+
+/* Logo Images in Card */
+.card-img-top {
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 0.5rem auto;
+  display: block;
+  background: transparent;
+}
+
+.card.h-100 .card-img-top.p-3,
+.card.h-100 .card-img-top.p-5 {
+  /* Remove Bootstrap's default padding for image, keep only margin */
+  padding: 0 !important;
+}
+
+/* Special for favicon: keep the icon smaller and centered */
+.card .card-img-top.p-5 {
+  max-width: 60px;
+  height: 60px;
+}
+
+/* Card Title and Text */
+.card-title {
+  color: #2f4858;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+
+.bg-dark .card-title,
+.bg-dark .card-text {
+  color: #fff !important;
+}
+
+.card-text {
+  font-size: 0.98rem;
+  color: #4a4a4a;
+  margin-bottom: 0.2rem;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* Row gap for cards */
+.row.g-4 {
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .card-img-top {
+    max-width: 80px;
+    height: 80px;
+  }
+  .card .card-img-top.p-5 {
+    max-width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .row.g-4 > [class^="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 
 
 
