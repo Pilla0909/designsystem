@@ -457,6 +457,92 @@ body {
     max-width: 100%;
   }
 }
+/* Navbar Demo Styles */
+.nav-bar-color {
+  background: #faf9f6 !important;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44,50,56,0.07);
+  border: 1px solid #e2e1e0 !important;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #2f4858 !important;
+  font-weight: 500;
+  margin-left: 0.8rem;
+  margin-right: 0.3rem;
+  transition: color 0.18s, background 0.18s;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.nav-highlight {
+  color: #fff !important;
+  background: #2f4858;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:focus {
+  outline: 2px solid #f5b164;
+  outline-offset: 1px;
+}
+
+/* Responsive Navbar: Remove border on mobile for cleaner look */
+@media (max-width: 768px) {
+  .nav-bar-color {
+    border-radius: 8px;
+    box-shadow: none;
+    border: none !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Page Title and Usage Section */
+.page-title {
+  color: #2f4858;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+h5, h4 {
+  color: #2f4858;
+  font-weight: 600;
+}
+
+/* Code Block Styling */
+.code-block {
+  background: #f7f6f5;
+  color: #2f4858;
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  font-size: 1rem;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  border: 1px solid #ececec;
+}
+
+/* Usage and Accessibility Lists */
+ul {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  color: #32435b;
+}
+
+p {
+  color: #424242;
+  font-size: 1.05rem;
+}
 
 
 
