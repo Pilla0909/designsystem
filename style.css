@@ -180,10 +180,10 @@ a.inline-link {
 }
 
 .footer-logo {
-  max-width: 80px;
+  max-width: 80px !important;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .footer-custom .footer-links {
