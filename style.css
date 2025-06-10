@@ -162,6 +162,15 @@ img. img-fluid {
     margin-bottom: 0.7rem;
   }
 }
+.color-swatch {
+  border-radius: 8px 8px 0 0;
+}
+.card-footer {
+  background-color: #fff;
+  padding: 1rem;
+  border-top: none;
+}
+
 
 /* Section headers */
 main h3 {
