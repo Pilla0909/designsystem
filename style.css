@@ -73,64 +73,82 @@ img.img-fluid {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.palette-title {
-  font-family: 'EB Garamond', serif;
-  font-weight: 700;
-  color: #2F4858;
-  font-size: 2rem;
+
+/* color */
+
+/* Brand Colors */
+.bg-slate-navy {
+  background-color: #2F4858;
+  color: #ffffff;
 }
 
-.palette-section-title {
-  font-family: 'EB Garamond', serif;
+.bg-sun-orange {
+  background-color: #F29E4C;
+  color: #000000;
+}
+
+.bg-ivory-white {
+  background-color: #FAF9F6;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+
+.bg-sage-green {
+  background-color: #CCDCCA;
+  color: #000000;
+}
+
+/* Grayscale */
+.bg-rich-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.bg-muted-gray {
+  background-color: #6E6E6E;
+  color: #ffffff;
+}
+
+/* Text Utility Classes */
+.text-slate-navy {
+  color: #2F4858;
+}
+
+.text-sun-orange {
+  color: #F29E4C;
+}
+
+.text-ivory-white {
+  color: #FAF9F6;
+}
+
+.text-sage-green {
+  color: #CCDCCA;
+}
+
+.text-rich-black {
+  color: #000000;
+}
+
+.text-muted-gray {
+  color: #6E6E6E;
+}
+
+/* Swatch Styling */
+.color-swatch {
+  height: 140px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-footer {
+  font-size: 0.9rem;
+}
+
+.card h5 {
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #2F4858;
-  font-size: 1.22rem;
 }
 
-.color-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 1px 8px rgba(44,50,56,0.05);
-  border: 1px solid #edeceb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.2rem 0.8rem 1.2rem 0.8rem;
-  min-height: 190px;
-  transition: box-shadow 0.18s;
-  text-align: center;
-}
-
-.color-card:hover {
-  box-shadow: 0 4px 16px rgba(44,50,56,0.11);
-}
-
-.color-sample {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  border: 1.5px solid #ececec;
-  box-shadow: 0 1px 4px rgba(44,50,56,0.03);
-}
-
-.color-title {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.09rem;
-  font-weight: 700;
-  color: #2F4858;
-}
-
-.color-hex {
-  font-size: 0.97rem;
-  color: #6e6e6e;
-  margin-bottom: 0.2rem;
-}
-
-.color-desc {
-  font-size: 0.92rem;
-  color: #4a4a4a;
-}
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
