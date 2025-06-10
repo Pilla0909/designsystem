@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Card – GreenScape Design System</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    .page-title {
-      font-family: 'EB Garamond', serif;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .card-example {
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-
-    .card-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-
-    .code-block {
-      background-color: #eee;
-      font-family: monospace;
-      font-size: 0.9rem;
-      padding: 1rem;
-      border-radius: 6px;
-      white-space: pre-wrap;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body class="d-flex">
 
-<body class="p-5">
+  <!-- Sidebar -->
+  <nav class="bg-light p-3 vh-100 border-end" style="width: 250px;">
+    <img src="logo/color logo.png" alt="Logo" class="img-fluid mb-4" style="max-width: 80px;">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <strong>Foundations</strong>
+        <ul class="nav flex-column ms-3">
+          <li><a href="typography.html" class="nav-link p-1">Typography</a></li>
+          <li><a href="color.html" class="nav-link p-1">Color</a></li>
+        </ul>
+      </li>
+      <li class="nav-item mt-3">
+        <strong>Components</strong>
+        <ul class="nav flex-column ms-3">
+          <li><a href="navbar.html" class="nav-link p-1">Navbar</a></li>
+          <li><a href="footer.html" class="nav-link p-1">Footer</a></li>
+          <li><a href="card.html" class="nav-link p-1 active">Card</a></li>
+        </ul>
+      </li>
+      <li class="nav-item mt-3">
+        <strong>Page Patterns</strong>
+        <ul class="nav flex-column ms-3">
+          <li><a href="homepage.html" class="nav-link p-1">Homepage</a></li>
+          <li><a href="project.html" class="nav-link p-1">Project</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
-  <h1 class="page-title">Card</h1>
-  <p>The cards serve as a clickable element that is linked to a project page.</p>
+  <!-- Main Content -->
+  <main class="flex-grow-1 p-4">
+    <h2 class="mb-3">Card</h2>
+    <p>The cards serve as a clickable element that is linked to a project page.</p>
 
-  <!-- Example -->
-  <h5 class="mt-4">Example</h5>
-  <div class="card card-example bg-light rounded border">
-    <img src="../images/img-placeholder.svg" class="card-img-top" alt="image placeholder">
-    <div class="card-body">
-      <h3 class="card-title">Card title</h3>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut efficitur erat, at dapibus massa.
-      </p>
-      <a href="#" class="stretched-link"></a>
+    <h5 class="mt-5 mb-3">Example</h5>
+    <div class="card shadow-sm rounded border-0" style="max-width: 400px;">
+      <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Card Image">
+      <div class="card-body bg-light">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.
+          Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.</p>
+        <hr>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-warning fw-bold px-4">Button</a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- Code -->
-  <h5>Code</h5>
-  <div class="code-block">
-&lt;div class="col-lg-6 col-md-12 py-2"&gt;<br>
-  &lt;div class="card h-100 bg-card rounded-0"&gt;<br>
-    &lt;img src="../images/img-placeholder.svg" alt="image placeholder" class="card-img-top"&gt;<br>
-    &lt;div class="card-body"&gt;<br>
-      &lt;h3 class="card-title"&gt;Card title&lt;/h3&gt;<br>
-      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;<br>
-      &lt;a href="#" class="stretched-link"&gt;&lt;/a&gt;<br>
-    &lt;/div&gt;<br>
-  &lt;/div&gt;<br>
+    <!-- Code Section -->
+    <h5 class="mt-5 mb-3">Code</h5>
+    <pre class="bg-light p-3 rounded" style="white-space: pre-wrap;"><code>
+&lt;div class="card shadow-sm rounded border-0" style="max-width: 400px;"&gt;
+  &lt;img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Card Image"&gt;
+  &lt;div class="card-body bg-light"&gt;
+    &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur...&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;div class="d-flex justify-content-center"&gt;
+      &lt;a href="#" class="btn btn-warning fw-bold px-4"&gt;Button&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-  </div>
+    </code></pre>
 
-  <!-- Usage -->
-  <h5 class="mt-5">Usage</h5>
-  <ul>
-    <li>The cards must include a project overview and an associated image.</li>
-    <li>The entire surface of the cards must be clickable.</li>
-  </ul>
+    <h5 class="mt-5">Usage</h5>
+    <ul>
+      <li>The cards must include a project overview and an associated image.</li>
+      <li>The entire surface of the cards must be clickable.</li>
+    </ul>
 
-  <!-- Accessibility -->
-  <h5 class="mt-4">Accessibility Considerations</h5>
-  <p>
-    The image in the card must include alt text. This primary card uses dark text against light backgrounds to meet the WCAG color contrast requirement.
-    If using any darker backgrounds (surface-brand-primary, surface-brand-secondary), use lighter text (text-brand-primary-light, text-inverse).
-  </p>
+    <h5 class="mt-4">Accessibility Considerations</h5>
+    <p>The image in the card must include alt text. This card uses dark text on light backgrounds
+      to meet the WCAG color contrast requirements. Use appropriate contrast if changing backgrounds.</p>
+  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
