@@ -1,12 +1,17 @@
-.btn-accent {
-  background-color: #F29E4C;
-  color: white;
-  border: none;
-  border-radius: 5px;
+
+.nav-link.active {
+  font-weight: bold;
+  color: #000;
 }
 
-.btn-accent:hover {
-  background-color: #e68f36;
+.btn-warning {
+  background-color: #F4A259;
+  border: none;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #e8903b;
 }
 body {
   margin: 0;
