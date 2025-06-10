@@ -73,6 +73,221 @@ img.img-fluid {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Color Palette Grid */
+.color-block {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(44, 50, 56, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  min-height: 190px;
+  transition: box-shadow 0.2s;
+}
+
+.color-block:hover {
+  box-shadow: 0 4px 18px rgba(44, 50, 56, 0.14);
+}
+
+/* Color Swatch Circle */
+.color-swatch {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 24px auto 8px auto;
+  border: 2px solid #eee;
+  box-shadow: 0 1px 4px rgba(44, 50, 56, 0.05);
+}
+
+/* Color Info */
+.color-block .p-3 {
+  text-align: center;
+  padding: 1rem 0.25rem;
+}
+
+.color-block strong {
+  font-size: 1.1rem;
+  color: #2F4858;
+}
+
+.color-block span {
+  display: block;
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #6e6e6e;
+}
+
+.color-block small {
+  color: #6e6e6e;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .color-block {
+    min-height: 160px;
+  }
+  .color-swatch {
+    width: 54px;
+    height: 54px;
+    margin: 16px auto 6px auto;
+  }
+}
+/* Main Card Styles */
+.card {
+  width: 22rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(44, 50, 56, 0.08);
+  border: none;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 24px rgba(44, 50, 56, 0.15);
+}
+
+/* Card image styling */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background: #ececec;
+}
+
+/* Card body styling */
+.card-body {
+  background: #f7f7f3;
+  padding: 1.2rem 1.2rem 1.4rem 1.2rem;
+}
+
+.card-title {
+  color: #2f4858;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-text {
+  color: #456;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card hr {
+  margin: 1rem 0;
+}
+
+.btn {
+  background: #f5b164;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #e49d40;
+  color: #fff;
+}
+
+/* Container and layout adjustments */
+.container {
+  max-width: 900px;
+}
+
+pre code {
+  background: #f3f3ef;
+  color: #232323;
+  padding: 1rem;
+  display: block;
+  border-radius: 10px;
+  font-size: 0.97rem;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    min-width: 0;
+  }
+  .card-img-top {
+    height: 120px;
+  }
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Footer Demo Box */
+.bg-light {
+  background: #f7f7f3 !important;
+}
+
+.footer-demo {
+  border-radius: 16px;
+  box-shadow: 0 1px 8px rgba(44, 50, 56, 0.08);
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer Logo */
+.footer-demo img,
+footer img {
+  max-width: 80px;
+  margin-bottom: 1.1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Heading */
+.footer-demo h5,
+footer h5 {
+  color: #2f4858;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Social Links */
+.footer-demo .d-flex a,
+footer .d-flex a {
+  color: #2f4858;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.15s;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+}
+
+.footer-demo .d-flex a:hover,
+footer .d-flex a:hover {
+  color: #fff;
+  background: #2f4858;
+}
+
+/* Copyright & Misc Text */
+.footer-demo p,
+footer p {
+  color: #6e6e6e;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  font-size: 0.97rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-demo,
+  footer {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+
+
 
 
 
