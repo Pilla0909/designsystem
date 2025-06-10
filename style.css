@@ -9,7 +9,12 @@ body {
   min-height: 100vh;
   box-shadow: 0 2px 12px rgba(60, 70, 75, 0.06);
 }
+.main-content {
+  margin-left: 0 ! important;
+  margin-right: 0 ! important;
+  padding-left: 2.5rem;
 
+}
 h1, h2, h4 {
   color: #223026;
 }
