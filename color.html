@@ -1,98 +1,163 @@
-<main class="main-content flex-grow-1 p-5">
-  <h2 class="mb-4 palette-title">Color Palette</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenScape Design System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="sidebar.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+  <a href="index.html">
+  <img src="logo/color logo.png" alt="GreenScape Logo" class="sidebar-logo mb-3" />
+</a>
 
-  <!-- Brand Colors Section -->
-  <section class="mb-5">
-    <h3 class="mb-3 palette-section-title">Brand</h3>
-    <div class="row g-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#2F4858;"></div>
-          <div class="color-info">
-            <div class="color-title">Dark Blue</div>
-            <div class="color-hex">HEX #2F4858</div>
-            <div class="color-desc">Primary text, buttons</div>
+  <!-- Foundations (Collapsible Section) -->
+  <button class="sidebar-section-title btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#foundationsList" aria-expanded="true" aria-controls="foundationsList">
+    <span class="fw-bold">Foundations</span>
+  </button>
+  <ul class="collapse show" id="foundationsList">
+    <li><a class="sidebar-link" href="typography.html">Typography</a></li>
+    <li><a class="sidebar-link" href="color.html">Color</a></li>
+    <li><a class="sidebar-link" href="logo.html">Logo</a></li>
+  </ul>
+
+  <!-- Components (Collapsible Section) -->
+  <button class="sidebar-section-title btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#componentsList" aria-expanded="true" aria-controls="componentsList">
+    <span class="fw-bold">Components</span>
+  </button>
+  <ul class="collapse show" id="componentsList">
+    <li><a class="sidebar-link" href="navbar.html">Navbar</a></li>
+    <li><a class="sidebar-link" href="footer.html">Footer</a></li>
+    <li><a class="sidebar-link" href="card.html">Card</a></li>
+  </ul>
+
+  <!-- Page Patterns (Collapsible Section) -->
+  <button class="sidebar-section-title btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#patternsList" aria-expanded="true" aria-controls="patternsList">
+    <span class="fw-bold">Page Patterns</span>
+  </button>
+  <ul class="collapse show" id="patternsList">
+    <li><a class="sidebar-link" href="homepage.html">Homepage</a></li>
+    <li><a class="sidebar-link" href="project.html">Project</a></li>
+  </ul>
+</nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+      <h2 class="mb-4">Color Palette</h2>
+
+      <h4>Brand</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #8C4F25; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Cinnamon</h5>
+              <div><strong>HEX</strong> #8C4F25</div>
+              <div class="small">Uses: text-brand-primary, surface-brand-primary, logo-accent</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #CAC196; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Japanese Yam</h5>
+              <div><strong>HEX</strong> #CAC196</div>
+              <div class="small">Uses: text-brand-primary-light, surface-brand-primary-light</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #3C4E45; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Tuscan Kale</h5>
+              <div><strong>HEX</strong> #3C4E45</div>
+              <div class="small">Uses: text-brand-secondary, surface-brand-secondary</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #A9BCAF; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Leek</h5>
+              <div><strong>HEX</strong> #A9BCAF</div>
+              <div class="small">Uses: text-brand-secondary-light, surface-brand-secondary-light</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#F7A64B;"></div>
-          <div class="color-info">
-            <div class="color-title">Orange</div>
-            <div class="color-hex">HEX #F7A64B</div>
-            <div class="color-desc">Accent, buttons</div>
+
+      <h4>Gray</h4>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #353535; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Charcoal</h5>
+              <div><strong>HEX</strong> #353535</div>
+              <div class="small">Uses: text-primary, surface-inverse, logo-base</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#FAF9F6; border:1px solid #eee;"></div>
-          <div class="color-info">
-            <div class="color-title">Light Green</div>
-            <div class="color-hex">HEX #FAF9F6</div>
-            <div class="color-desc">Background, cards</div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #404040; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Poppy Seed</h5>
+              <div><strong>HEX</strong> #404040</div>
+              <div class="small">Uses: border-primary</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#54788e;"></div>
-          <div class="color-info">
-            <div class="color-title">Slate Blue</div>
-            <div class="color-hex">HEX #54788e</div>
-            <div class="color-desc">Links, accents</div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #AFAFAF; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Oyster Mushroom</h5>
+              <div><strong>HEX</strong> #AFAFAF</div>
+              <div class="small">Uses: border-secondary</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #D1D0D0; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Earl Gray</h5>
+              <div><strong>HEX</strong> #D1D0D0</div>
+              <div class="small">Uses: surface-tertiary</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #DBD9D9; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Cauliflower</h5>
+              <div><strong>HEX</strong> #DBD9D9</div>
+              <div class="small">Uses: text-inverse, surface-primary, border-inverse, logo-base-inverse</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-body" style="background: #CBC7C5; height: 140px;"></div>
+            <div class="card-footer text-start">
+              <h5>Almond</h5>
+              <div><strong>HEX</strong> #CBC7C5</div>
+              <div class="small">Uses: surface-secondary</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Gray Colors Section -->
-  <section>
-    <h3 class="mb-3 palette-section-title">Gray</h3>
-    <div class="row g-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#282828;"></div>
-          <div class="color-info">
-            <div class="color-title">Dark Gray</div>
-            <div class="color-hex">HEX #282828</div>
-            <div class="color-desc">Text, icons</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#6e6e6e;"></div>
-          <div class="color-info">
-            <div class="color-title">Medium Gray</div>
-            <div class="color-hex">HEX #6e6e6e</div>
-            <div class="color-desc">Secondary text</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#eaf5ee;"></div>
-          <div class="color-info">
-            <div class="color-title">Pale Mint</div>
-            <div class="color-hex">HEX #eaf5ee</div>
-            <div class="color-desc">Background</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="color-card">
-          <div class="color-sample" style="background:#fff; border:1px solid #eee;"></div>
-          <div class="color-info">
-            <div class="color-title">White</div>
-            <div class="color-hex">HEX #ffffff</div>
-            <div class="color-desc">Background, text</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
+  </div>
+</body>
+</html>
