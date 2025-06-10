@@ -250,6 +250,40 @@ a.inline-link {
   height: auto;
   max-width: 100%;
 }
+/* -------------------
+   TABS STYLING – PATTERNS
+--------------------- */
+
+.nav-tabs {
+  border-bottom: 2px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.nav-tabs .nav-link {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  color: var(--color-accent); /* Secondary for unselected */
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--color-primary); /* Primary for selected */
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-primary);
+  background-color: transparent;
+}
+:root {
+  --color-primary: #2F4858;
+  --color-accent: #F29E4C;
+  --color-border: #CCDCCA;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
 
 
 
