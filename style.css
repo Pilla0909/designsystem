@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FAF9F6;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  display: block;
+  margin: 4px 0;
+  text-decoration: none;
+  color: #2f4858;
+}
+
+.sidebar hr {
+  margin: 1rem 0;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 2rem;
+  width: calc(100% - 270px);
+}
+
+.layout-label {
+  font-size: 16px;
+  color: #444;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
