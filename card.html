@@ -46,51 +46,52 @@
   </ul>
 </nav>
     
-    <!-- Main Content -->
-<div class="container py-5">
-  <h2 class="mb-4">Card</h2>
-  <p>The cards serve as a clickable element that is linked to a project page.</p>
-  <h4>Example</h4>
+  <!-- Main Content -->
+    <div class="container py-5">
+      <h2 class="mb-4">Card</h2>
+      <p>The cards serve as a clickable element that is linked to a project page.</p>
 
-  <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="card card-responsive">
-        <img src="componets/imageplaceholder.png" class="card-img-top" alt="Card image" />
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.
-            Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.
-          </p>
-          <hr />
-          <div class="d-grid">
-            <button class="btn btn-primary-orange">Button</button>
+      <h4>Example</h4>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card card-responsive">
+            <img src="componets/imageplaceholder.png" class="card-img-top" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.
+                Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.
+              </p>
+              <hr />
+              <div class="d-grid">
+                <button class="btn btn-primary-orange">Button</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <h4 class="mt-5">Code</h4>
       <pre><code>
-&lt;div class="card" style="width: 22rem; border-radius: 12px; overflow: hidden;"&gt;
-  &lt;img src="imageplaceholder.png" class="card-img-top" alt="Card image"&gt;
-  &lt;div class="card-body" style="background:#f7f7f3;"&gt;
-    &lt;h5 class="card-title" style="color: #2f4858;"&gt;Card Title&lt;/h5&gt;
-    &lt;p class="card-text" style="color: #456;"&gt;Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin. Lorem ipsum dolor sit amet consectetur. Duis purus eget interdum in sollicitudin.&lt;/p&gt;
+&lt;div class="card card-responsive"&gt;
+  &lt;img src="componets/imageplaceholder.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur...&lt;/p&gt;
     &lt;hr&gt;
     &lt;div class="d-grid"&gt;
-      &lt;button class="btn" style="background:#f5b164; color:white; font-weight:600;"&gt;Button&lt;/button&gt;
+      &lt;button class="btn btn-primary-orange"&gt;Button&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
       </code></pre>
+
       <h4 class="mt-4">Usage</h4>
       <ul>
         <li>The cards must include a project overview and an associated image.</li>
         <li>The entire surface of the cards must be clickable if used as links.</li>
       </ul>
+
       <h4 class="mt-4">Accessibility Considerations</h4>
       <p>
         The image in the card must include <code>alt</code> text. This primary card uses dark text against light backgrounds to meet the WCAG color contrast requirement. If using any of the darker backgrounds, use lighter text.
