@@ -1,3 +1,13 @@
+.btn-accent {
+  background-color: #F29E4C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-accent:hover {
+  background-color: #e68f36;
+}
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
