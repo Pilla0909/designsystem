@@ -7,22 +7,8 @@
   flex-direction: column;
   align-items: flex-start;
   border-right: 2px solid #e2e1e0;
-  color: #2F4858; 
-}
-
-.sidebar a,
-.sidebar-link,
-.sidebar-section-title {
   color: #2F4858;
 }
-
-.sidebar-link:hover,
-.sidebar-link.active {
-  background: #edeceb;
-  color: #186137;
-  font-weight: 500;
-}
-
 
 .sidebar-logo {
   max-width: 70px;
@@ -34,6 +20,7 @@
   margin-top: 1.2rem;
   margin-bottom: 0.4rem;
   font-size: 1.08rem;
+  color: #2F4858;
 }
 
 .sidebar ul {
@@ -47,7 +34,7 @@
 }
 
 .sidebar-link {
-  color: #232323;
+  color: #2F4858;
   text-decoration: none;
   display: block;
   padding: 3px 0 3px 12px;
