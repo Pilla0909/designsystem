@@ -1,147 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Color Palette</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .color-swatch {
+      width: 100%;
+      height: 100px;
+      border-radius: 8px 8px 0 0;
+    }
+    .color-block {
+      border: 1px solid #e1e1e1;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
   <div class="d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar p-4">
-      <img src="../logo/color logo.png" alt="Logo" class="img-fluid mb-4" style="max-width: 80px;" />
-      <h6 class="fw-bold">Foundations</h6>
-      <ul class="list-unstyled">
-        <li><a href="typography.html">Typography</a></li>
-        <li><a href="color.html" class="fw-bold text-decoration-underline">Color</a></li>
-        <li><a href="logo.html">Logo</a></li>
-      </ul>
-      <h6 class="fw-bold">Components</h6>
-      <ul class="list-unstyled">
-        <li><a href="../componets/navbar.html">Navbar</a></li>
-        <li><a href="../componets/footer.html">Footer</a></li>
-        <li><a href="../componets/card.html">Card</a></li>
-      </ul>
-      <h6 class="fw-bold">Page Patterns</h6>
-      <ul class="list-unstyled">
-        <li><a href="../homepage.html">Homepage</a></li>
-        <li><a href="../project.html">Project</a></li>
-      </ul>
-    </div>
-
-    <!-- Main Content -->
+    <!-- Sidebar code here, if you want -->
     <div class="container py-5">
       <h2 class="mb-4">Color Palette</h2>
-
-      <h4>Brand</h4>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #8C4F25; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Cinnamon</h5>
-              <div><strong>HEX</strong> #8C4F25</div>
-              <div class="small">Uses: text-brand-primary, surface-brand-primary, logo-accent</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #CAC196; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Japanese Yam</h5>
-              <div><strong>HEX</strong> #CAC196</div>
-              <div class="small">Uses: text-brand-primary-light, surface-brand-primary-light</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #3C4E45; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Tuscan Kale</h5>
-              <div><strong>HEX</strong> #3C4E45</div>
-              <div class="small">Uses: text-brand-secondary, surface-brand-secondary</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #A9BCAF; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Leek</h5>
-              <div><strong>HEX</strong> #A9BCAF</div>
-              <div class="small">Uses: text-brand-secondary-light, surface-brand-secondary-light</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4>Gray</h4>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #353535; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Charcoal</h5>
-              <div><strong>HEX</strong> #353535</div>
-              <div class="small">Uses: text-primary, surface-inverse, logo-base</div>
+        <!-- Example color block -->
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#2f4858;"></div>
+            <div class="p-3">
+              <strong>Dark Blue</strong><br>
+              <span>HEX: #2f4858</span><br>
+              <small>Primary text, buttons</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #404040; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Poppy Seed</h5>
-              <div><strong>HEX</strong> #404040</div>
-              <div class="small">Uses: border-primary</div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#ffffff; border:1px solid #ccc;"></div>
+            <div class="p-3">
+              <strong>White</strong><br>
+              <span>HEX: #ffffff</span><br>
+              <small>Background, text</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #AFAFAF; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Oyster Mushroom</h5>
-              <div><strong>HEX</strong> #AFAFAF</div>
-              <div class="small">Uses: border-secondary</div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#f7a64b;"></div>
+            <div class="p-3">
+              <strong>Orange</strong><br>
+              <span>HEX: #f7a64b</span><br>
+              <small>Accent, buttons</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #D1D0D0; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Earl Gray</h5>
-              <div><strong>HEX</strong> #D1D0D0</div>
-              <div class="small">Uses: surface-tertiary</div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#ccdcca;"></div>
+            <div class="p-3">
+              <strong>Light Green</strong><br>
+              <span>HEX: #ccdcca</span><br>
+              <small>Background, cards</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #DBD9D9; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Cauliflower</h5>
-              <div><strong>HEX</strong> #DBD9D9</div>
-              <div class="small">Uses: text-inverse, surface-primary, border-inverse, logo-base-inverse</div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#54788e;"></div>
+            <div class="p-3">
+              <strong>Slate Blue</strong><br>
+              <span>HEX: #54788e</span><br>
+              <small>Links, accents</small>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center h-100">
-            <div class="card-body" style="background: #CBC7C5; height: 140px;"></div>
-            <div class="card-footer text-start">
-              <h5>Almond</h5>
-              <div><strong>HEX</strong> #CBC7C5</div>
-              <div class="small">Uses: surface-secondary</div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#eaf5ee;"></div>
+            <div class="p-3">
+              <strong>Pale Mint</strong><br>
+              <span>HEX: #eaf5ee</span><br>
+              <small>Background</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#282828;"></div>
+            <div class="p-3">
+              <strong>Dark Gray</strong><br>
+              <span>HEX: #282828</span><br>
+              <small>Text, icons</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="color-block">
+            <div class="color-swatch" style="background:#6e6e6e;"></div>
+            <div class="p-3">
+              <strong>Medium Gray</strong><br>
+              <span>HEX: #6e6e6e</span><br>
+              <small>Secondary text</small>
             </div>
           </div>
         </div>
       </div>
+      <p class="mt-4"><small>Add more usage notes as needed, based on your system!</small></p>
     </div>
   </div>
 </body>
